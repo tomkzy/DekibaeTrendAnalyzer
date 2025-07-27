@@ -8,5 +8,8 @@ namespace DekibaeTrendAnalyzer.Models
 {
     public class SamePositionCondition
     {
+        public bool UseX { get; set; }
+        public bool UseY { get; set; }
+        public double MaxDistance { get; set; }
     }
 }
