@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DekibaeTrendAnalyzer
+namespace DekibaeTrendAnalyzer.Forms
 {
-    public partial class Form1 : Form
+    public partial class ConditionForm : Form
     {
-        public Form1()
+        public ConditionForm()
         {
             InitializeComponent();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
