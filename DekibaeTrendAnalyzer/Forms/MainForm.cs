@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DekibaeTrendAnalyzer.Forms;
 
 namespace DekibaeTrendAnalyzer
 {
@@ -17,9 +18,10 @@ namespace DekibaeTrendAnalyzer
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void btnNewAggregation_Click(object sender, EventArgs e)
         {
-
+            Form conditionForm = new ConditionForm();
+            conditionForm.ShowDialog();
         }
     }
 }

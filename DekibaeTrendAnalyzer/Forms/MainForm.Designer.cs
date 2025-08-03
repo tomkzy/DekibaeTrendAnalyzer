@@ -34,8 +34,12 @@
             this.flowLayoutPanelTop = new System.Windows.Forms.FlowLayoutPanel();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelConditions = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnNewAggregation = new System.Windows.Forms.Button();
+            this.btnLoadAggregationFile = new System.Windows.Forms.Button();
             this.tableLayoutPanelMain.SuspendLayout();
             this.flowLayoutPanelTop.SuspendLayout();
+            this.panelMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanelMain
@@ -91,6 +95,9 @@
             // panelMenu
             // 
             this.panelMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMenu.Controls.Add(this.btnLoadAggregationFile);
+            this.panelMenu.Controls.Add(this.btnNewAggregation);
+            this.panelMenu.Controls.Add(this.label1);
             this.panelMenu.Location = new System.Drawing.Point(3, 3);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(363, 291);
@@ -104,6 +111,34 @@
             this.panelConditions.Size = new System.Drawing.Size(365, 291);
             this.panelConditions.TabIndex = 1;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(5, 2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 18);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "メニュー";
+            // 
+            // btnNewAggregation
+            // 
+            this.btnNewAggregation.Location = new System.Drawing.Point(8, 38);
+            this.btnNewAggregation.Name = "btnNewAggregation";
+            this.btnNewAggregation.Size = new System.Drawing.Size(115, 37);
+            this.btnNewAggregation.TabIndex = 1;
+            this.btnNewAggregation.Text = "新規集計\r\n";
+            this.btnNewAggregation.UseVisualStyleBackColor = true;
+            this.btnNewAggregation.Click += new System.EventHandler(this.btnNewAggregation_Click);
+            // 
+            // btnLoadAggregationFile
+            // 
+            this.btnLoadAggregationFile.Location = new System.Drawing.Point(8, 81);
+            this.btnLoadAggregationFile.Name = "btnLoadAggregationFile";
+            this.btnLoadAggregationFile.Size = new System.Drawing.Size(180, 37);
+            this.btnLoadAggregationFile.TabIndex = 2;
+            this.btnLoadAggregationFile.Text = "集計済みファイル読込";
+            this.btnLoadAggregationFile.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
@@ -113,6 +148,8 @@
             this.Name = "Form1";
             this.tableLayoutPanelMain.ResumeLayout(false);
             this.flowLayoutPanelTop.ResumeLayout(false);
+            this.panelMenu.ResumeLayout(false);
+            this.panelMenu.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -125,6 +162,9 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelTop;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panelConditions;
+        private System.Windows.Forms.Button btnLoadAggregationFile;
+        private System.Windows.Forms.Button btnNewAggregation;
+        private System.Windows.Forms.Label label1;
     }
 }
 
