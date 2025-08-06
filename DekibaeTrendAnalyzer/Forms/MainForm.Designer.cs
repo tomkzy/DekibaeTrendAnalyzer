@@ -33,10 +33,10 @@
             this.panelGraph = new System.Windows.Forms.Panel();
             this.flowLayoutPanelTop = new System.Windows.Forms.FlowLayoutPanel();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelConditions = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnNewAggregation = new System.Windows.Forms.Button();
             this.btnLoadAggregationFile = new System.Windows.Forms.Button();
+            this.btnNewAggregation = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelConditions = new System.Windows.Forms.Panel();
             this.tableLayoutPanelMain.SuspendLayout();
             this.flowLayoutPanelTop.SuspendLayout();
             this.panelMenu.SuspendLayout();
@@ -103,22 +103,14 @@
             this.panelMenu.Size = new System.Drawing.Size(363, 291);
             this.panelMenu.TabIndex = 0;
             // 
-            // panelConditions
+            // btnLoadAggregationFile
             // 
-            this.panelConditions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelConditions.Location = new System.Drawing.Point(372, 3);
-            this.panelConditions.Name = "panelConditions";
-            this.panelConditions.Size = new System.Drawing.Size(365, 291);
-            this.panelConditions.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(5, 2);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "メニュー";
+            this.btnLoadAggregationFile.Location = new System.Drawing.Point(8, 81);
+            this.btnLoadAggregationFile.Name = "btnLoadAggregationFile";
+            this.btnLoadAggregationFile.Size = new System.Drawing.Size(207, 37);
+            this.btnLoadAggregationFile.TabIndex = 2;
+            this.btnLoadAggregationFile.Text = "集計済みファイル読込";
+            this.btnLoadAggregationFile.UseVisualStyleBackColor = true;
             // 
             // btnNewAggregation
             // 
@@ -130,19 +122,26 @@
             this.btnNewAggregation.UseVisualStyleBackColor = true;
             this.btnNewAggregation.Click += new System.EventHandler(this.btnNewAggregation_Click);
             // 
-            // btnLoadAggregationFile
+            // label1
             // 
-            this.btnLoadAggregationFile.Location = new System.Drawing.Point(8, 81);
-            this.btnLoadAggregationFile.Name = "btnLoadAggregationFile";
-            this.btnLoadAggregationFile.Size = new System.Drawing.Size(180, 37);
-            this.btnLoadAggregationFile.TabIndex = 2;
-            this.btnLoadAggregationFile.Text = "集計済みファイル読込";
-            this.btnLoadAggregationFile.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(5, 2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 18);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "メニュー";
+            // 
+            // panelConditions
+            // 
+            this.panelConditions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelConditions.Location = new System.Drawing.Point(372, 3);
+            this.panelConditions.Name = "panelConditions";
+            this.panelConditions.Size = new System.Drawing.Size(365, 291);
+            this.panelConditions.TabIndex = 1;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1898, 1024);
             this.Controls.Add(this.tableLayoutPanelMain);
             this.Name = "Form1";
